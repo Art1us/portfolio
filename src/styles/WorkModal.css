@@ -70,16 +70,23 @@
 
 }
 
+.workModal__description{
+    width:80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 .workModal__buttons {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+   
 }
 
 .workModal__button {
 
     display: inline-block;
     padding: .5em .5em;
-    margin:0.2em;
+    margin:0.5em;
     border-radius: 2px;
     background: var(--clr-accent);
     color: var(--clr-dark);

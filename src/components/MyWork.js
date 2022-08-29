@@ -13,21 +13,21 @@ export default function MyWork() {
           img={require("../img/portfolio/amazon-clone-preview.jpg")}
           title="Amazon Clone"
           description="An interpretation of Amazon basic functionality.
-          Accounts and Login Page, Products Page, Cart and Checkout Page"
+          Accounts and Login Page, Products Page, Cart and Checkout Page."
           projectLink="https://dynamic-gumption-db6543.netlify.app/"
           codeLink="https://github.com/Art1us/amazon-clone"
         />
         <PortfolioItem
           img={require("../img/portfolio/tesla-clone-preview.jpg")}
           title="Tesla Clone"
-          description="A clone of Tesla's main page with styling and animations"
+          description="A clone of Tesla's main page with styling and animations."
           projectLink="https://idyllic-lamington-3d8a69.netlify.app/"
           codeLink="https://github.com/Art1us/tesla-clone"
         />
         <PortfolioItem
           img={require("../img/portfolio/picsome-preview.jpg")}
           title="Pic Some"
-          description="Add to cart few images to be printed"
+          description="Add to cart few images to be printed."
           projectLink="https://regal-tartufo-b4baea.netlify.app/"
           codeLink="https://github.com/Art1us/picksome"
         />
