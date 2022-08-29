@@ -12,28 +12,22 @@ export default function MyWork() {
         <PortfolioItem
           img={require("../img/portfolio/amazon-clone-preview.jpg")}
           title="Amazon Clone"
-          description={
-            <p>
-              Amazon Clone built with React JS. Accounts and Login Page Products
-              Page Cart and Checkout Page Real Payments Order History Page
-            </p>
-          }
+          description="An interpretation of Amazon basic functionality.
+          Accounts and Login Page, Products Page, Cart and Checkout Page"
           projectLink="https://dynamic-gumption-db6543.netlify.app/"
           codeLink="https://github.com/Art1us/amazon-clone"
         />
         <PortfolioItem
           img={require("../img/portfolio/tesla-clone-preview.jpg")}
           title="Tesla Clone"
-          description={
-            <p>Tesla Clone using React JS and Redux, and animations</p>
-          }
-          projectLink="https://joyful-twilight-74a3ef.netlify.app/"
+          description="A clone of Tesla's main page with styling and animations"
+          projectLink="https://idyllic-lamington-3d8a69.netlify.app/"
           codeLink="https://github.com/Art1us/tesla-clone"
         />
         <PortfolioItem
           img={require("../img/portfolio/picsome-preview.jpg")}
           title="Pic Some"
-          description={<p>Pic some app using React JS and API calls.</p>}
+          description="Add to cart few images to be printed"
           projectLink="https://regal-tartufo-b4baea.netlify.app/"
           codeLink="https://github.com/Art1us/picksome"
         />

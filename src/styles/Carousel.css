@@ -2,31 +2,32 @@ img {
   max-width: 100%
 }
 
-.carousel {
-  height: 600px;
-  margin: 0;
-  display: grid;
-  grid-template-rows: 500px 100px;
-  grid-template-columns: 1fr 30px 30px 30px 30px 30px 1fr;
-  align-items: center;
-  justify-items: center;
-
-
+.carousel__input{
+  display:none;
 }
 
-
+.carousel {
+  height: 400px;
+  margin: 0;
+  display: grid;
+  grid-template-rows: 300px;
+  grid-template-columns: 1fr 30px 30px 30px 30px 30px 1fr;
+  align-items: center;
+  justify-items: center;  
+  overflow-x: hidden;
+}
 
 .carousel__container {
   grid-row: 1 / 2;
   grid-column: 1 / 8;
   width: 90vw;
-  height: 500px;
+  height: 400px;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
   transform-style: preserve-3d;
-  perspective: 600px;
+  perspective: 150px;
   --items: 5;
   --middle: 3;
   --position: 1;
@@ -34,13 +35,14 @@ img {
 }
 
 .carousel__item {
+
   position: absolute;
-  width: 300px;
-  height: 400px;
+  width: 150px;
+  height: 250px;
   --r: calc(var(--position) - var(--offset));
   --abs: max(calc(var(--r) * -1), var(--r));
   transition: all 0.25s linear;
-  transform: rotateY(calc(-10deg * var(--r))) translateX(calc(-300px * var(--r)));
+  transform: rotateY(calc(-5deg * var(--r))) translateX(calc(-120px * var(--r)));
   z-index: calc((var(--position) - var(--abs)));
 }
 
@@ -72,7 +74,7 @@ img {
 }
 
 .carousel__input:nth-of-type(1):checked~.carousel__container {
-  --position: 1;
+  --position: 3;
 }
 
 .carousel__input:nth-of-type(2) {
@@ -81,8 +83,29 @@ img {
 }
 
 .carousel__input:nth-of-type(2):checked~.carousel__container {
-  --position: 2;
+  --position: 3;
 }
+
+
+
+.carousel__input:nth-of-type(4) {
+  grid-column: 5 / 6;
+  grid-row: 2 / 3;
+}
+
+.carousel__input:nth-of-type(4):checked~.carousel__container {
+  --position: 3;
+}
+
+.carousel__input:nth-of-type(5) {
+  grid-column: 6 / 7;
+  grid-row: 2 / 3;
+}
+
+.carousel__input:nth-of-type(5):checked~.carousel__container {
+  --position: 3;
+}
+
 
 .carousel__input:nth-of-type(3) {
   grid-column: 4 /5;
@@ -93,20 +116,68 @@ img {
   --position: 3;
 }
 
-.carousel__input:nth-of-type(4) {
-  grid-column: 5 / 6;
-  grid-row: 2 / 3;
+.service__name{
+  font-size: 1rem;
 }
 
-.carousel__input:nth-of-type(4):checked~.carousel__container {
-  --position: 4;
+@media (min-width:600px){
+  .carousel {
+    height: 400px;
+    margin: 0;
+    display: grid;
+    grid-template-rows: 300px;
+    grid-template-columns: 1fr 30px 30px 30px 30px 30px 1fr;
+    align-items: center;
+    justify-items: center;  
+  }
+  
+  .carousel__container {
+    grid-row: 1 / 2;
+    grid-column: 1 / 8;
+    width: 90vw;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transform-style: preserve-3d;
+    perspective: 200px;
+    --items: 5;
+    --middle: 3;
+    --position: 1;
+    pointer-events: none;
+  }
+  
+  .carousel__item {
+    position: absolute;
+    width: 200px;
+    height: 300px;
+    --r: calc(var(--position) - var(--offset));
+    --abs: max(calc(var(--r) * -1), var(--r));
+    transition: all 0.25s linear;
+    transform: rotateY(calc(-5deg * var(--r))) translateX(calc(-150px * var(--r)));
+    z-index: calc((var(--position) - var(--abs)));
+  }
+  .service__name{
+    font-size: 1.5rem;
+  }
 }
 
-.carousel__input:nth-of-type(5) {
-  grid-column: 6 / 7;
-  grid-row: 2 / 3;
-}
-
-.carousel__input:nth-of-type(5):checked~.carousel__container {
-  --position: 5;
+@media (min-width:800px){
+  .carousel {
+    height: 400px;
+    margin: 0;
+    display: grid;
+    grid-template-rows: 350px;
+    grid-template-columns: 1fr 30px 30px 30px 30px 30px 1fr;
+    align-items: center;
+    justify-items: center;  
+  }
+  
+  .carousel__item {
+    width: 250px;
+    height: 350px;    
+    transform: rotateY(calc(-5deg * var(--r))) translateX(calc(-200px * var(--r)));
+    
+  }
 }

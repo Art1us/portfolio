@@ -10,7 +10,7 @@ export default function Introduction() {
       <p className="section__subtitle section__subtitle--intro">front-end dev</p>
       <img
         src={img}
-        alt="a picture of Artur Pazyniuk"
+        alt="Artur Pazyniuk"
         className="intro__img"
       />
     </section>

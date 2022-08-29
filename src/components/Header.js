@@ -21,7 +21,7 @@ export default function Header() {
       <nav className="nav">
         <ul className="nav__list">
           <NavLink name="Home" link="#home" />
-          <NavLink name="My Services" link="#services" />
+          <NavLink name="My Skills" link="#services" />
           <NavLink name="About me" link="#about" />
           <NavLink name="My Work" link="#work" />
           <NavLink name="Contact Me" link="#footer" />
