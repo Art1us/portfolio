@@ -10,9 +10,8 @@ export default function AboutMe() {
 
       <div className="about-me__body">
         <p>
-          I'm Arthur, a passionate freelancer bringing you programming and
-          design from the future. I am experienced in developing web and desktop
-          applications including full front end design.
+          I'm Artur, a passionate frontend React developer. I am experienced in developing web 
+          and desktop applications including full frontend design.
         </p>
       </div>
 
