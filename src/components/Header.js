@@ -1,5 +1,6 @@
 import NavLink from "./NavLink";
 
+
 export default function Header() {
   function toggleClass() {
     document.body.classList.toggle("nav-open");
@@ -7,9 +8,7 @@ export default function Header() {
 
   return (
     <header>
-      <div className="logo">
-        <img src="" alt="" />
-      </div>
+
       <button
         className="nav-toggle"
         aria-label="toggle navigation"
