@@ -16,10 +16,10 @@ function WorkModal({ img, title, description, projectLink, codeLink, setShowModa
           </p>
           <div className="workModal__buttons">
             <div className="workModal__button site-btn">
-              <a href={projectLink}>View Project</a>
+              <a href={projectLink} target="_blank" rel="noopener noreferrer">View Project</a>
             </div>
             <div className="workModal__button code-btn">
-              <a href={codeLink}>View Code</a>
+              <a href={codeLink} target="_blank" rel="noopener noreferrer">View Code</a>
             </div>
           </div>
         </div>
