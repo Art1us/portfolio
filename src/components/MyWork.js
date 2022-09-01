@@ -19,6 +19,7 @@ export default function MyWork() {
         />
         <PortfolioItem
           img={require("../img/portfolio/tesla-clone-preview.jpg")}
+          imgModal={require("../img/portfolio/tesla-mockup.png")}
           title="Tesla Clone"
           description="A clone of Tesla's main page with styling and animations."
           projectLink="https://idyllic-lamington-3d8a69.netlify.app/"
@@ -26,6 +27,7 @@ export default function MyWork() {
         />
         <PortfolioItem
           img={require("../img/portfolio/picsome-preview.jpg")}
+          imgModal={require("../img/portfolio/picsome-mockup.png")}
           title="Pic Some"
           description="Add to cart few images to be printed."
           projectLink="https://regal-tartufo-b4baea.netlify.app/"
