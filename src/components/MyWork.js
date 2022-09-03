@@ -11,6 +11,7 @@ export default function MyWork() {
       <div className="portfolio">
         <PortfolioItem
           img={require("../img/portfolio/amazon-clone-preview.jpg")}
+          imgModal={require("../img/portfolio/amazon-clone-mockup.png")}
           title="Amazon Clone"
           description="An interpretation of Amazon basic functionality.
           Accounts and Login Page, Products Page, Cart and Checkout Page."
