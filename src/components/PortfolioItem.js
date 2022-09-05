@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import WorkModal from "./WorkModal";
 
-function PortfolioItem({ img, title, description, projectLink, codeLink }) {
+function PortfolioItem({ img, imgModal, title, description, projectLink, codeLink }) {
   const [showModal, setShowModal] = useState(false);
   return (
     <div className="portfolioItem">
@@ -14,6 +14,7 @@ function PortfolioItem({ img, title, description, projectLink, codeLink }) {
       {showModal && (
         <WorkModal
           img={img}
+          imgModal={imgModal}
           title={title}
           description={description}
           setShowModal={setShowModal}

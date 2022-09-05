@@ -11,14 +11,16 @@ export default function MyWork() {
       <div className="portfolio">
         <PortfolioItem
           img={require("../img/portfolio/amazon-clone-preview.jpg")}
+          imgModal={require("../img/portfolio/amazon-clone-mockup.png")}
           title="Amazon Clone"
           description="An interpretation of Amazon basic functionality.
           Accounts and Login Page, Products Page, Cart and Checkout Page."
-          projectLink="https://dynamic-gumption-db6543.netlify.app/"
+          projectLink="https://heroic-travesseiro-a38ed9.netlify.app/"
           codeLink="https://github.com/Art1us/amazon-clone"
         />
         <PortfolioItem
           img={require("../img/portfolio/tesla-clone-preview.jpg")}
+          imgModal={require("../img/portfolio/tesla-mockup.png")}
           title="Tesla Clone"
           description="A clone of Tesla's main page with styling and animations."
           projectLink="https://idyllic-lamington-3d8a69.netlify.app/"
@@ -26,6 +28,7 @@ export default function MyWork() {
         />
         <PortfolioItem
           img={require("../img/portfolio/picsome-preview.jpg")}
+          imgModal={require("../img/portfolio/picsome-mockup.png")}
           title="Pic Some"
           description="Add to cart few images to be printed."
           projectLink="https://regal-tartufo-b4baea.netlify.app/"
