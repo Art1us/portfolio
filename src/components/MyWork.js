@@ -15,7 +15,7 @@ export default function MyWork() {
           title="Amazon Clone"
           description="An interpretation of Amazon basic functionality.
           Accounts and Login Page, Products Page, Cart and Checkout Page."
-          projectLink="https://dynamic-gumption-db6543.netlify.app/"
+          projectLink="https://heroic-travesseiro-a38ed9.netlify.app/"
           codeLink="https://github.com/Art1us/amazon-clone"
         />
         <PortfolioItem
